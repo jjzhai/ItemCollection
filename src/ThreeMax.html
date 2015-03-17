@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>求三个数的最大数</title>
+		<script>
+			function fun(){
+				var x,y,z;
+				var max;
+				
+				x=document.getElementById("num1").value;
+				y=document.getElementById("num2").value;
+				z=document.getElementById("num3").value;
+				
+				if(x>y){
+					max=x;
+				}else{
+					max=y;
+				}
+				if(z>max){
+					max=z;
+				}
+				
+				document.getElementById("display").innerHTML="最大值为："+max;
+			}			
+		</script>
+	</head>
+	<body>
+		<div style="width:300px;">
+			<div>数字1：<input id="num1"/></div>
+			<br>
+			<div>数字2：<input id="num2"/></div>
+			<br>
+			<div>数字3：<input id="num3"/></div>
+			<br>
+			<div style="margin-left:40px;">
+				<label id="display">
+					最大值为：
+				</label>
+			</div>
+			<br>
+			<div style="text-align:center" onclick="fun()">
+				<button>求最大值</button>
+			</div>
+		</div>
+	</body>
+</html>
