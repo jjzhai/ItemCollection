@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class ThreeMax {
-	public static void main(String[] args) {
+	public void ThreeMaxFun() {
 		JFrame jframe = new JFrame("求最大值");	    
 		
 		JPanel panel1 = new JPanel();
@@ -97,6 +97,6 @@ public class ThreeMax {
 				
 				label4.setText("最大值为："+max);
 			}
-		});	    
-	}	
+		});	
+	}
 }
